@@ -22,7 +22,7 @@ const Pet = conexao.define('pet', {
      },
      idade: {
         type: Sequelize.INTEGER,
-        defaultValue: 0
+        defaultValue: 1
      }
 })
 
