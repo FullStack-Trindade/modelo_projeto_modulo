@@ -23,6 +23,10 @@ const Pet = conexao.define('pet', {
      idade: {
         type: Sequelize.INTEGER,
         defaultValue: 1
+     },
+     status: {
+      type: Sequelize.ENUM("SAUDAVEL", "EM_RECUPERACAO", "ENFERMO"),
+      defaultValue: 'SAUDAVEL'
      }
 })
 
